@@ -1,0 +1,125 @@
+commit 959ab921f3f882c051029c93df51bf47277adba7
+Merge: 1bed4f9 c59c1a7
+Author: Sahima <ss6545@g.rit.edu>
+Date:   Tue Feb 13 19:32:41 2024 -0500
+
+    committed
+
+commit 1bed4f913095fce7410b8fc340d96707c063f60b
+Author: Sahima <ss6545@g.rit.edu>
+Date:   Tue Feb 13 19:28:16 2024 -0500
+
+    trying it again
+
+commit c59c1a7e208c19b6a6c59aae2f7d4655a920b5ea
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:26:01 2024 -0500
+
+    accidentally deleted maria's name
+
+commit c74d32c091b2e0f5180dd725eea9b6d3e996f2a0
+Author: Sahima <ss6545@g.rit.edu>
+Date:   Tue Feb 13 19:25:30 2024 -0500
+
+    againagain
+
+commit dc7a83255c1a869b34eb0989c0586534d3227339
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:25:13 2024 -0500
+
+    formatting error
+
+commit 59a116bda980f099d69913c640bcc5cb769ac021
+Merge: 2a9c5ce cb5f830
+Author: Sahima <ss6545@g.rit.edu>
+Date:   Tue Feb 13 19:21:17 2024 -0500
+
+    Merge branch 'main' of https://github.com/RIT-SWEN-261-006/team-project-2235-swen-261-06-h-404teamnamenotfound
+
+commit 2a9c5ce720ccfd983daa88a15120eeee1412fc1e
+Author: Sahima <ss6545@g.rit.edu>
+Date:   Tue Feb 13 19:18:26 2024 -0500
+
+    added my name
+
+commit cb5f8307afb9a124322ba5975c4154c707c1aafa
+Author: Maria Whala <mnw5254@rit.edu>
+Date:   Tue Feb 13 19:18:14 2024 -0500
+
+    Added my name to MEMBER4 in README.md.
+
+commit cf28c2bf2b8a417f8338da55ddf405e9b89c8671
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:16:20 2024 -0500
+
+    formatted right
+
+commit 0bd35f3ffabeef06e2a356706f991c26125bad15
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:15:39 2024 -0500
+
+    pulled names
+
+commit dd6b0ecbbfa452561bc3aa774259a5aee29f4251
+Merge: 54fc1d6 a709a48
+Author: jfranczyk27 <jfranczyk27@gmail.com>
+Date:   Tue Feb 13 19:13:52 2024 -0500
+
+    added name
+
+commit 54fc1d657d84a3390ed5882d96ca8d63d4d7b25f
+Merge: a0d3215 ce78e04
+Author: jfranczyk27 <jfranczyk27@gmail.com>
+Date:   Tue Feb 13 19:13:19 2024 -0500
+
+    added name
+
+commit a709a48f6702349ecaa3eb98aeb59d9710f94ce3
+Merge: 43dc1aa ce78e04
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:12:28 2024 -0500
+
+    Merge branch 'main' of https://github.com/RIT-SWEN-261-006/team-project-2235-swen-261-06-h-404teamnamenotfound
+
+commit 43dc1aa379ce344400baae84aaf6731b5e9d88b6
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:12:20 2024 -0500
+
+    update github setup
+
+commit a0d321559518596f2cedb374ef939ce3e81e3a75
+Author: jfranczyk27 <jfranczyk27@gmail.com>
+Date:   Tue Feb 13 19:11:50 2024 -0500
+
+    added name
+
+commit ce78e04b43c90d0d538fad820c2cdd701780bea9
+Merge: 232eccd b469fba
+Author: apenza <aiden.m.penza+github@gmail.com>
+Date:   Tue Feb 13 19:10:52 2024 -0500
+
+    Merge branch 'main' of https://github.com/RIT-SWEN-261-006/team-project-2235-swen-261-06-h-404teamnamenotfound
+
+commit d777c543fd5ff5ed76ab2b296fa320b9ad01a3cf
+Author: jfranczyk27 <jfranczyk27@gmail.com>
+Date:   Tue Feb 13 19:10:18 2024 -0500
+
+    added name
+
+commit 232eccd4cffbc9f1fc66ee7f88e529816dc2f46c
+Author: apenza <aiden.m.penza+github@gmail.com>
+Date:   Tue Feb 13 19:09:19 2024 -0500
+
+    addded my name
+
+commit b469fbadd90bc7d7e98c843a2a874be5b8072148
+Author: AJBruno23 <ajbru23@gmail.com>
+Date:   Tue Feb 13 19:08:02 2024 -0500
+
+    github setup 4.4
+
+commit bcf4d8ab846f30d16ad1b03bf403572cf3806ee7
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Sun Feb 11 19:04:33 2024 +0000
+
+    Initial commit
