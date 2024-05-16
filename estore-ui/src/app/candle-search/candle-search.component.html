@@ -1,0 +1,13 @@
+<div id="search-component">
+    <label for="search-box">Candle Search</label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  
+    <ul class="search-result">
+      <li *ngFor="let candle of candles$ | async" >
+        <a routerLink="/detail/{{candle.id}}">
+          {{candle.name}}
+        </a>
+      </li>
+      <li *ngFor="let candle of candles$ | async" ></li>
+    </ul>
+</div>

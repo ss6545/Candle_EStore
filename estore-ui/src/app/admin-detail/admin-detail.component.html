@@ -1,0 +1,21 @@
+<div *ngIf="candle">
+    <h2>{{candle.name}} Product:</h2>
+    <div>
+        <p>Current Name: {{candle.name}}</p>
+        <label for="new-candle-name">Name: </label>
+        <input id="new-candle-name" #candleName />
+        <button type="button" class="add-button" (click)="editName(candleName.value); candleName.value=''">Update Name</button>
+    </div>
+    <div>
+        <p>Current Price: {{candle.price}}</p>
+        <label for="new-candle-price">Price: </label>
+        <input id="new-candle-price" type="number" #candlePrice />
+        <button type="button" class="add-button" (click)="editPrice(candlePrice.valueAsNumber); candlePrice.value=''">Update Price</button>
+    </div>
+    <div>
+        <p>Current Quantity: {{candle.quantity}}</p>
+        <label for="new-candle-quantity">Quantity: </label>
+        <input id="new-candle-quantity" type="number" #candleQuantity />
+        <button type="button" class="add-button" (click)="editQuantity(candleQuantity.valueAsNumber); candleQuantity.value=''">Update Quantity</button>
+    </div>
+</div>

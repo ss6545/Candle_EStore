@@ -1,0 +1,11 @@
+<div *ngIf="candle">
+  <h2>{{candle.name}} Candle:</h2>
+  <div><span>Name: </span>{{candle.name}}</div>
+  <div><span>Price: </span>${{candle.price}}</div>
+  <div><span>Quantity: </span>{{candle.quantity}}</div>
+  <button type="button" (click)="goBack()">Back</button>
+  <button type="button" (click)="addProduct(candle)">Add To Cart</button>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div> 
+</div>

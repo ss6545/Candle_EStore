@@ -1,0 +1,10 @@
+<app-user-header></app-user-header>
+<h2>Candles For Sale:</h2>
+<app-candle-search></app-candle-search> 
+<div class="candles-menu">
+  <a *ngFor="let candle of candles"
+      routerLink="/detail/{{candle.id}}">
+      {{candle.name}}
+  </a>
+</div>
+<div class="errorMessage" *ngIf="candles.length == 0">No products available. Check back later!</div>

@@ -1,0 +1,50 @@
+<app-user-header></app-user-header>
+<div *ngIf="user">
+  <h2>Items In Cart</h2>
+  <div *ngIf="user.cart && user.cart.length">
+    <div *ngFor="let candle of user.cart; let i = index">
+      <div>
+        <h3>{{candle.name}}</h3>
+        <p>Total Price: ${{candle.price * candle.quantity | number:'1.2-2'}}</p>
+        <p>Quantity: {{ candle.quantity }}</p>
+      </div>
+      <hr>
+    </div>
+    <p>Total: ${{getTotalPrice(user.cart) | number:'1.2-2'}}</p>
+    <button (click)="purchase()">Purchase</button>
+    <p> {{errorMessage}} </p>
+  </div>
+  <div *ngIf="!user.cart || !user.cart.length">
+    <p>{{user.name}} 's cart is empty.</p>
+  </div>
+
+  <h2>Saved Credit Card</h2>
+  <div *ngIf="user.creditCard">
+    <p>Card Number: {{ user.creditCard.cardNumber }}</p>
+    <p>Card Holder's Name: {{ user.creditCard.cardHolderName }}</p>
+    <p>Expiry Date: {{ user.creditCard.expiryDate }}</p>
+    <p>Security Code: {{ user.creditCard.secCode }}</p>
+    <button (click)="toggleCreditCardSection()">Update Credit Card</button>
+  </div>
+  <div *ngIf="!user.creditCard">
+    <p>No credit card saved.</p>
+    <button (click)="toggleCreditCardSection()">Add Credit Card</button>
+  </div>
+
+  <div *ngIf="showCreditCardSection">
+    <label for="new-card-number">New Card number: </label>
+      <input id="new-card-number" #cardNumber /><br>
+
+    <label for="new-holder-name">Card Holder's Name: </label>
+      <input id="new-holder-name" #cardHolderName /><br>
+
+    <label for="new-expiry-date">Expiry Date: </label>
+      <input id="new-expiry-date" #expiryDate /><br>
+
+    <label for="new-sec-code">Security Code: </label>
+      <input id="new-sec-code" #secCode /><br>
+
+    <button type="button" class="add-button" (click)="editCard(cardNumber.value,cardHolderName.value,expiryDate.value,secCode.value);">Save Card Info</button>
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>

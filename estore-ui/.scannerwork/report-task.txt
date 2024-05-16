@@ -1,0 +1,6 @@
+projectKey=Candles-app
+serverUrl=http://localhost:9000
+serverVersion=10.4.1.88267
+dashboardUrl=http://localhost:9000/dashboard?id=Candles-app
+ceTaskId=550abdb7-3bb7-44ae-b5e9-49e7c1feda4a
+ceTaskUrl=http://localhost:9000/api/ce/task?id=550abdb7-3bb7-44ae-b5e9-49e7c1feda4a

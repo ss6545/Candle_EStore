@@ -1,0 +1,18 @@
+<app-header></app-header>
+<h2>Candles For Sale:</h2>
+
+<div>
+  <label for="new-candle">Candle name: </label>
+  <input id="new-candle" #candleName />
+  <button type="button" class="add-button" (click)="add(candleName.value); candleName.value=''">Add candle</button>
+</div>
+
+<ul class="candles">
+  <li *ngFor="let candle of candles">
+    <a routerLink="/admin-detail/{{candle.id}}">
+      <span class="badge">{{candle.id}}</span> {{candle.name}}
+    </a>
+    <button type="button" class="delete" title="delete candle"
+      (click)="delete(candle)">x</button>
+  </li>
+</ul>

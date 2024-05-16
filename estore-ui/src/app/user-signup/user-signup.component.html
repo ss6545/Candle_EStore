@@ -1,0 +1,35 @@
+<h2>SIGN UP</h2>
+<div id="password-requirements">
+    Your password must contain:
+    <ul>
+        <li>Between 8-32 characters</li>
+        <li>At least 1 number</li>
+        <li>At least 1 capital letter</li>
+        <li>At least 1 lowercase letter</li>
+        <li>At least one of the following special characters: ! &#64; # $ % ^ & * + =</li>
+    </ul>
+</div>
+<br>
+<label for="username-box">Username: </label>
+  <input #usernameBox id="username-box" value="{{providedUsername}}"/>
+<br>
+<label for="password-box">Password: </label>
+  <input #passwordBox  id="password-box" ngModel (ngModelChange)="validPassword(passwordBox.value)"/>
+<br>
+<ul class="errorMessage">
+    <li *ngIf="tooShort">Your password must have at least 8 characters.</li>
+    <li *ngIf="tooLong">Your password must not have more than 32 characters.</li>
+    <li *ngIf="missingNumber">Your password must contain at least 1 number 0-9.</li>
+    <li *ngIf="missingCapital">Your password must contain at least 1 capital letter A-Z.</li>
+    <li *ngIf="missingLowercase">Your password must contain at least 1 lowercase letter a-z.</li>
+    <li *ngIf="missingSpecial">Your password must contain at least 1 approved special character.</li>
+</ul>
+<button (click) = "checkSignup(usernameBox.value, passwordBox.value)">
+  Create account
+</button>
+<span *ngIf="errorMessage" class="errorMessage">{{errorMessage}}</span>
+<br>
+<button routerLink="/login">
+    Back to login
+</button>
+<br>

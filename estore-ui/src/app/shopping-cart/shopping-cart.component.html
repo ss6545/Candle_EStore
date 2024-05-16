@@ -1,0 +1,28 @@
+<app-user-header></app-user-header>
+<div *ngIf="user">
+  <h2>{{ user.name }}'s Cart</h2>
+  <div *ngIf="user.cart && user.cart.length">
+    <div *ngFor="let candle of user.cart; let i = index">
+      <div>
+        <h3>{{ candle.name }}</h3>
+        <p>Price: ${{ candle.price }}</p>
+        <p>Quantity: {{ candle.quantity }}</p>
+        <button (click)="removeProduct(candle.id)">Remove from Cart</button>
+        <label for="quantity">Update Quantity: </label>
+        <input type="number" id="quantity" #quantityInput name="quantity" value="1" min="1" step="1">
+        <button (click)="updateProduct(candle, quantityInput)">Update</button>
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+      </div>
+      <hr>
+    </div>
+    <button (click)="checkout()">Checkout</button>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  </div>
+  <div *ngIf="!user.cart || !user.cart.length">
+    <p>{{ user.name }} 's cart is empty.</p>
+  </div>
+</div>

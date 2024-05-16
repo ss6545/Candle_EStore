@@ -1,0 +1,10 @@
+<app-header></app-header>
+<h2>Candles For Sale:</h2>
+<div class="candles-menu">
+  <a *ngFor="let candle of candles"
+      routerLink="/detail/{{candle.id}}">
+      {{candle.name}}
+  </a>
+</div>
+
+<app-candle-search></app-candle-search> 

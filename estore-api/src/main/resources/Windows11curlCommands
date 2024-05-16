@@ -1,0 +1,34 @@
+Windows 11 curl commands for sprint 1
+
+To get entire inventory:
+curl.exe -X GET 'http://localhost:8080/candles'
+
+To get candle with ID 11:
+curl.exe -i -X GET 'http://localhost:8080/candles/11'
+
+To get a candle that does not exist: -----------------------------SHOULD-DISPLAY-ERROR--------------------
+curl.exe -i -X GET 'http://localhost:8080/candles/200'
+
+To get a candle that contains the letters "ai" in its name:
+curl.exe -X GET 'http://localhost:8080/candles/?name=ai'
+
+To get a candle that contains the letters "ooo" in its name: -----------------------------SHOULD-DISPLAY-ERROR--------------------
+curl.exe -X GET 'http://localhost:8080/candles/?name=ooo'
+
+To create a new candle:
+curl.exe -X POST -H 'Content-Type:application/json' 'http://localhost:8080/candles' -d '{\"name\": \"testCandle2\"}'
+
+To create a candle that already exists: -----------------------------SHOULD-DISPLAY-ERROR--------------------
+curl.exe -X POST -H 'Content-Type:application/json' 'http://localhost:8080/candles' -d '{\"name\": \"testCandle2\"}'
+
+To delete a candle:
+curl.exe -i -X DELETE 'http://localhost:8080/candles/10'
+
+To delete a candle that does not exist: -----------------------------SHOULD-DISPLAY-ERROR--------------------
+curl.exe -i -X DELETE 'http://localhost:8080/candles/400'
+
+To update a candle:
+curl.exe -i -X PUT -H 'Content-Type:application/json' 'http://localhost:8080/candles' -d '{\"id\": 12, \"name\":\"FancyShmancyCandle\", \"price\": 200, \"quantity\": 5}'
+
+To update a candle that does not exist: -----------------------------SHOULD-DISPLAY-ERROR--------------------
+curl.exe -i -X PUT -H 'Content-Type:application/json' 'http://localhost:8080/candles' -d '{\"id\": 303, \"name\":\"FancyShmancyCandle2\", \"price\": 200, \"quantity\": 5}'
